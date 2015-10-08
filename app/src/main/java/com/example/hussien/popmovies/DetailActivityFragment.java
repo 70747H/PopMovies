@@ -266,6 +266,7 @@ public class DetailActivityFragment extends Fragment {
             }
 
             mVoteAverageView.setText(Integer.toString(mMovie.getRating()));
+
         }
 
         return rootView;
@@ -306,7 +307,6 @@ public class DetailActivityFragment extends Fragment {
                     results.add(trailerModel);
                 }
             }
-
             return results;
         }
 
@@ -395,7 +395,9 @@ public class DetailActivityFragment extends Fragment {
                     }
                 }
             }
+            Utility.setListViewHeightBasedOnChildren(mTrailersView);
         }
+
     }
 
     public class FetchReviewsTask extends AsyncTask<String, Void, List<Review>> {
@@ -497,6 +499,7 @@ public class DetailActivityFragment extends Fragment {
                     }
                 }
             }
+            Utility.setListViewHeightBasedOnChildren(mReviewsView);
         }
     }
 }
