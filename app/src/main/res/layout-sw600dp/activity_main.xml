@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/fragment_movie"
-        android:name="com.example.hussien.popmovies_v12.MainActivityFragment"
+        android:name="com.example.hussien.popmovies.MainActivityFragment"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="3" />
